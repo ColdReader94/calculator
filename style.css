@@ -1,0 +1,64 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Tahoma, sans-serif;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 170px);
+  grid-template-rows: minmax(150px, auto) repeat(5, 55px);  
+}
+
+.display {
+  grid-column: 1 / -1;
+  background: #fff5f5;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  border: 2px solid gray;
+  padding: 15px;
+  word-wrap: break-word;
+  word-break: break-all;  
+}
+
+.display .previous-value {
+  color: #000000;
+  opacity: 0.8;
+  font-size: 1.2rem;
+}
+
+.display .current-value {
+  color: #000000;  
+  font-size: 2rem;
+}
+
+.container > button {
+  cursor: pointer;
+  font-size: 2rem;
+  outline: none;
+  background: #e2e7fa;
+}
+
+.container > button:hover {
+  background: #bdc9fb;
+}
+
+.container .orange {
+    background: orange;
+}
+
+.container .orange:hover {
+    background: orange;
+    opacity: 0.8;
+}
+
+.container .equals {
+    background: greenyellow;
+    opacity: 0.8;
+}
